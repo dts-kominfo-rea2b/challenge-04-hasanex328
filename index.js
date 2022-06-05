@@ -8,7 +8,22 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = null;
+const createDate = (arry,i) => {
+  if (
+isNaN(i)
+  )
+  {
+  let arr=[];
+  for ( let element of arry){
+    let date = new Date (element);
+    let tetanggal = Date.parse(date.toUTCString())/1000;
+    arr.push(tetanggal);
+  }
+  return arr;
+} else {
+  let date = new Date (arry[i])
+  return Date.parse(date.toUTCString())/1000;
+}}
 
 // ! JANGAN DIMODIFIKASI
 (() => {
